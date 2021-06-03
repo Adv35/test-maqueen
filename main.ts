@@ -1,0 +1,12 @@
+basic.forever(function () {
+    maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 30)
+    maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
+    maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
+    basic.showIcon(IconNames.Yes)
+    basic.showIcon(IconNames.Happy)
+    basic.pause(2000)
+    maqueen.motorStop(maqueen.Motors.All)
+    maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
+    maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOn)
+    basic.pause(1000)
+})
